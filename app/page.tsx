@@ -1,95 +1,54 @@
+"use client";
 import Image from "next/image";
-import styles from "./page.module.css";
+import { Row, Col, Container } from "react-bootstrap";
+import Navigation from "@/components/Navigation";
+import Jumbotron from "@/components/Jumbotron";
+import ProductSection from "@/components/ProductSection";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <main className="bg-dark text-light min-vh-100">
+      <Container>
+        <Navigation />
+        <Row>
+          <Col lg={7} className="pe-lg-5 mb-4 mb-lg-0 h-100 sticky-lg-top">         
+            <Jumbotron /> 
+          </Col>
+          <Col lg={5} className="d-lg-block">
+            <ProductSection
+              productName="Tour-Quality Indoor/Outdoor Golf Putting Green"
+              productOptions={[
+                {
+                  optionName: "Compact",
+                  optionSize: "9' x 1.5'",
+                  optionHelper: "Single Hold",
+                  optionPrice: "₱21,700.00 PHP",
+                },
+                {
+                  optionName: "Standard",
+                  optionSize: "9' x 3'",
+                  optionHelper: "",
+                  optionPrice: "₱28,800.00 PHP",
+                },
+                {
+                  optionName: "XL",
+                  optionSize: "12' x 3'",
+                  optionHelper: "",
+                  optionPrice: "₱32,300.00 PHP",
+                },
+                {
+                  optionName: "XXL",
+                  optionSize: "15' x 3'",
+                  optionHelper: "",
+                  optionPrice: "₱36,400.00 PHP",
+                },
+              ]}
+              productDescriptionTitle="American Turf. Tour Tested."
+              productDescription="Lower your score and increase consistency by practicing daily on a quality, tour-grade turf putting green for both indoors & outdoors. Our product offers a true roll with a 9-11 Stimpmeter reading and the most realistic experience you'll find anywhere outside a real course."
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          </Col>
+        </Row>
+      </Container>
+    </main>
   );
 }

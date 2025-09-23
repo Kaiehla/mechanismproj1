@@ -1,0 +1,8 @@
+// overwrite bootstrap variables here
+$primary: #ffc262;
+$info: #5433eb;
+$dark: #000000;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
