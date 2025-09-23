@@ -8,7 +8,21 @@ import USFlag from "@/public/United-states_flag_icon_round.svg";
 import FRating from "@/public/FRating.svg";
 import Ship from "@/public/Ship.svg";
 
-function ProductSection(props: string | any) {
+interface ProductOption {
+  optionName: string;
+  optionSize: string;
+  optionHelper?: string;
+  optionPrice: string;
+}
+
+interface ProductSectionProps {
+  productName: string;
+  productOptions: ProductOption[];
+  productDescriptionTitle: string;
+  productDescription: string;
+}
+
+function ProductSection(props: ProductSectionProps) {
   const [selectedOption, setSelectedOption] = useState(0);
 
   return (
@@ -40,7 +54,7 @@ function ProductSection(props: string | any) {
       <hr />
       <Row className="mb-4 mb-lg-5 g-0 p-0 mt-2">
         <p className="fs-7 mb-2">Available size options:</p>
-        {props.productOptions.map((option: any, index: number) => (
+        {props.productOptions.map((option: ProductOption, index: number) => (
           <Col xs={3} md={6} lg={3} key={index} className="d-flex mb-2">
             <Card
               className={`text-center justify-content-between text-light align-items-center py-3 bg-dark-secondary w-100 ${

@@ -72,7 +72,7 @@ function DetailsAccordion() {
               height={24}
               alt={""}
             />
-            What's Included
+            What&apos;s Included
           </div>
         </Accordion.Header>
         <Accordion.Body className="text-light bg-transparent px-0">
@@ -151,12 +151,12 @@ function DetailsAccordion() {
           </p>
 
           <p className="accordion-text">
-            Even better, PrimePutt's proprietary cup design guarantees you'll
+            Even better, PrimePutt&apos;s proprietary cup design guarantees you&apos;ll
             never have a putt blocked by another ball. At the same time, these
             innovative cups perfectly replicate full-depth golf cups: the misses
             miss, and the makes go in. For setup, our specially-designed
             rubberized bottom and no-memory material mean the PrimePutt mat lays
-            flat and doesn't move right out of the box every time. These same
+            flat and doesn&apos;t move right out of the box every time. These same
             materials lend incredible durability to our putting mats, so you can
             use yours indoors or outdoors, putt with the kids, and let the dog
             walk over it—still rest assured that your PrimePutt indoor putting
