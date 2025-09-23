@@ -8,7 +8,7 @@ import USFlag from "@/public/United-states_flag_icon_round.svg";
 import FRating from "@/public/FRating.svg";
 import Ship from "@/public/Ship.svg";
 
-function ProductSection(props: any) {
+function ProductSection(props: string | any) {
   const [selectedOption, setSelectedOption] = useState(0);
 
   return (

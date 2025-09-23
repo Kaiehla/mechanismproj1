@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import Image from "next/image";
 import Image1 from "@/public/Image1.webp";
-import { CiSearch, CiShoppingBasket, CiUser } from "react-icons/ci";
 
 function Jumbotron() {
   return (
