@@ -64,8 +64,8 @@ function Jumbotron() {
                   Top 10 Best Golf Equipment and Accessories
                 </p>
                 <h1 className="fs-6 text-light mb-2 lh-base fw-bold">
-                  "Feels as close to real grass as any artificial putting turf
-                  I've encountered, and the ball rolls true across it"
+                  &ldquo;Feels as close to real grass as any artificial putting turf
+                  I&apos;ve encountered, and the ball rolls true across it&rdquo;
                 </h1>
                 <p className="fs-7 text-light fw-bold mb-0">NBC GolfPass </p>
               </div>
