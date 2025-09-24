@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PrimePutt Design Replication
 
-## Getting Started
+This project is a front-end replication of the [PrimePutt](https://primeputt.com/products/golf) product page, focusing specifically on the layout and design **above the "As Seen On" section**. The goal was to closely match the original site’s visual structure, styling, and responsive behavior while ensuring a clean, modular, and reusable codebase. Content from the "As Seen On" section and below was intentionally excluded.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Experience the replicated design in action:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 [Live Demo Link](https://mechanismproj1.vercel.app)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Table of Contents
 
-## Learn More
+- [Project Overview](#project-overview)
+- [Components](#components)
+- [Technologies Used](#technologies-used)
+- [Key Features](#key-features)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The main objective of this project was to replicate the top portion of the PrimePutt product page, including the hero section, product highlights, and detail sections. The focus was on:
 
-## Deploy on Vercel
+- Visual fidelity to the original design  
+- Responsiveness across devices (desktop, tablet, mobile)  
+- Modular and reusable component architecture  
+- Clean and maintainable code using modern front-end technologies  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project was completed as a design replication assessment to demonstrate front-end development and UI implementation skills.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Components
+
+- **Navigation:** Fully responsive top navigation with branding and links.  
+- **Jumbotron:** Hero section highlighting the main product with imagery and call-to-action buttons.  
+- **Product Section:** Grid layout showcasing product features, descriptions, and visuals.  
+- **Detail Accordion:** Expandable sections displaying additional product details in a clean, organized manner.  
+
+---
+
+## Technologies Used
+
+- **React & Next.js:** Component-based architecture and server-side rendering for faster load times.  
+- **TypeScript:** Type safety, improved maintainability, and developer experience.  
+- **Bootstrap:** Responsive grid system and utility classes for faster layout implementation.  
+- **CSS & SCSS:** Custom styling, variables, nesting, and mixins for modular design.  
+
+---
+
+## Key Features
+
+- Fully responsive design for desktop, tablet, and mobile devices.  
+- Component-based architecture for easy scalability and maintenance.  
+- Clean, modular, and readable code following modern front-end best practices.  
+- Accurate replication of the PrimePutt design above the "As Seen On" section.  
+
+
+
