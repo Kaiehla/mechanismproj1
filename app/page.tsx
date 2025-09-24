@@ -11,7 +11,7 @@ export default function Home() {
       <Container>
         <Navigation />
         <Row>
-          <Col lg={7} className="pe-lg-5 mb-4 mb-lg-0 h-100 sticky-lg-top">         
+          <Col lg={7} className="pe-lg-5 mb-4 mb-lg-0 h-100 sticky-lg-top d-none d-lg-block">         
             <Jumbotron /> 
           </Col>
           <Col lg={5} className="d-lg-block">

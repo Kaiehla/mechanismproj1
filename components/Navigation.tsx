@@ -52,11 +52,11 @@ function Navigation() {
         </Nav>
 
         {/* Icon Links */}
-        <Nav className="d-flex flex-row gap-3 gap-lg-0">
+        <Nav className="d-flex flex-row gap-0 gap-md-1 gap-lg-2">
           <Nav.Link href="#search" className="px-0">
             <Image src={Search} alt="Search" width={44} height={44} className="nav-icon" />
           </Nav.Link>
-          <Nav.Link href="#user" className="px-0">
+          <Nav.Link href="#user" className="px-0 d-none d-md-block">
             <Image src={User} alt="User" width={44} height={44} className="nav-icon" />
           </Nav.Link>
           <Nav.Link href="#cart" className="px-0">

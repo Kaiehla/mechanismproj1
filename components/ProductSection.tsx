@@ -7,6 +7,7 @@ import ShopPayLogo from "@/public/ShopPayLogoWhite.png";
 import USFlag from "@/public/United-states_flag_icon_round.svg";
 import FRating from "@/public/FRating.svg";
 import Ship from "@/public/Ship.svg";
+import Jumbotron from "./Jumbotron";
 
 interface ProductOption {
   optionName: string;
@@ -26,11 +27,11 @@ function ProductSection(props: ProductSectionProps) {
   const [selectedOption, setSelectedOption] = useState(0);
 
   return (
-    <Row className="px-3 mt-5 mb-5">
+    <Row className="px-3 mt-0 mt-lg-5 mb-5">
       {/* Review Section */}
-      <Col className="px-0 d-flex flex-column">
+      <Col lg={12} className="px-0 d-flex flex-column">
         {/* Product Name */}
-        <h1 className="fs-3 mb-3 px-0 order-md-1 order-lg-2 mb-md-3 mb-lg-5">
+        <h1 className="product-title fs-3 mb-3 px-0 order-md-1 order-lg-2 mb-md-3 mb-lg-5 ">
           {props.productName}
         </h1>
 
@@ -45,6 +46,11 @@ function ProductSection(props: ProductSectionProps) {
             238+ Reviews by PGA Pros, Coaches & Players
           </div>
         </div>
+      </Col>
+
+      {/* Jumbotron Component */}
+      <Col lg={12} className="d-block d-lg-none d-flex mb-4 w-100 px-0">
+        <Jumbotron />
       </Col>
 
       {/* Product Options & Price */}
